@@ -1,0 +1,13 @@
+{
+  "name": "gatsby-site-showcase-validator-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Benjamin Lannon <benjamin@lannonbr.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@octokit/rest": "^17.1.2",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
