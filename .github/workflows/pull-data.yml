@@ -1,7 +1,7 @@
 name: Pull Data
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "30 0 * * *"
 jobs:
   pull_data:
     env:
