@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn
-      - run: cd scripts/pull-entries
-      - run: node index.js
       - run: |
-          cd ../../
+          yarn
+          pushd scripts/pull-entries/
+          node index.js
+          popd
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add src/data/entries.json
