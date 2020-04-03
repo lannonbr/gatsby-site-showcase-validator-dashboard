@@ -5,9 +5,19 @@
   "author": "Benjamin Lannon <benjamin@lannonbr.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
   "dependencies": {
     "@octokit/rest": "^17.1.2",
     "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.0"
+    "gatsby": "^2.20.10",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-json": "^2.3.1",
+    "node-fetch": "^2.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

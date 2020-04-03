@@ -8,7 +8,7 @@ const { Octokit } = require("@octokit/rest");
 (async () => {
   // Spin up a client
   const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN
+    auth: process.env.GH_TOKEN
   });
 
   // get all of the workflows
@@ -58,7 +58,7 @@ const { Octokit } = require("@octokit/rest");
   // fetch the logs
   const text = await fetch(url, {
     headers: {
-      Authorization: `bearer ${process.env.GITHUB_TOKEN}`
+      Authorization: `bearer ${process.env.GH_TOKEN}`
     }
   }).then(resp => resp.text());
 
@@ -99,7 +99,7 @@ const { Octokit } = require("@octokit/rest");
   });
 
   fs.writeFileSync(
-    path.join(__dirname, "src", "data", "entries.json"),
+    path.join(__dirname, "..", "..", "src", "data", "entries.json"),
     JSON.stringify(entries)
   );
 })();
